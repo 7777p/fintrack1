@@ -1,0 +1,41 @@
+.transaction-filter {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 14px;
+
+    padding: 18px;
+
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+
+    margin-bottom: 24px;
+}
+
+.transaction-filter input,
+.transaction-filter select {
+    width: 95%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    background: white;
+}
+
+.transaction-filter input:focus,
+.transaction-filter select:focus {
+    outline: none;
+    border-color: #999;
+}
+
+@media (max-width: 600px) {
+    .transaction-filter {
+        grid-template-columns: 1fr;
+    }
+}

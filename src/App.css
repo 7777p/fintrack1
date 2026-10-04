@@ -1,0 +1,61 @@
+.App{
+    max-width: 960px;
+    margin: auto;
+    padding: 40px 20px;
+}
+.App-Header{
+    margin-bottom: 30px;
+}
+.App-Header h1{
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+}
+.App-Header p{
+    margin-top: 10px;
+}
+.balance-section{
+    display: grid;
+    grid-template-columns: repeat(4,  1fr);
+    gap: 20px;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #1f2937;
+
+}
+.form-section{
+    margin-top: 40px;
+}
+.transaction{
+    display: flex;
+    flex-direction: column;
+}
+.transaction-filters{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.transaction-filters input,
+.transaction-filters select{
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+@media (max-width: 900px) {
+    .balance-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .balance-section{
+        grid-template-columns: 1fr;
+    }
+    .transaction-filters{
+        grid-template-columns: 1fr;
+    }
+}
