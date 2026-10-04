@@ -3,7 +3,7 @@ import './TransactionForm.css'
 import { categories } from '../data/categories'
 
 function TransactionForm({onAddTransaction}) {
-
+// последнее обновление
     const [title, setTitle] = useState('')
     const [amount, setAmount] = useState('')
     const [type, setType] = useState('')
