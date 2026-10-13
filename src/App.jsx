@@ -4,6 +4,7 @@ import TransactionForm from './components/TransactionForm';
 import {useState} from 'react'
 import './App.css';
 import TransactionFilters from "./components/TransactionFilters.jsx";
+import ExpenseStats from "./components/ExpenseStats.jsx";
 
 
 function App() {
@@ -104,6 +105,7 @@ function App() {
                    <BalanceCard title="Доходы" amount={totalIncome}/>
                    <BalanceCard title="Расходы" amount={totalExpense}/>
                </section>
+               <ExpenseStats transactions={transactions} />
                <section className="form-section">
                <TransactionForm onAddTransaction={addTransaction}/>
                </section>
